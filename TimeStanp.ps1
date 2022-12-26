@@ -1,7 +1,7 @@
 Add-Type -AssemblyName System.Drawing
 Add-Type -AssemblyName System.Windows.Forms
 
-$Result = New-Item .\Result.txt -ItemType file -Force
+New-Item .\Result.txt -ItemType file -Force
 
 function Time_Stamp(){
 	$Time = (Get-Date).ToString("HH:mm")
